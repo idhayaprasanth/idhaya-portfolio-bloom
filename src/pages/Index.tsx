@@ -1,4 +1,3 @@
-
 import { Navbar } from "@/components/Navbar";
 import { ParticlesBackground } from "@/components/ParticlesBackground";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -137,7 +136,7 @@ const Index = () => {
           </div>
         </section>
         
-        {/* Skills Section */}
+        {/* Skills Section - Updated to use a single card with soft color */}
         <section id="skills" className="py-20 bg-muted/30">
           <div className="container px-4 md:px-6">
             <SectionHeading 
@@ -146,36 +145,24 @@ const Index = () => {
               alignment="center"
             />
             
-            <div className="mb-12">
-              <h3 className="text-xl font-semibold mb-6">Programming</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
-                <SkillIcon name="Python" icon={skillIcons.python} />
-                <SkillIcon name="JavaScript" icon={skillIcons.javascript} />
-                <SkillIcon name="React" icon={skillIcons.react} />
-                <SkillIcon name="HTML" icon={skillIcons.html} />
-                <SkillIcon name="CSS" icon={skillIcons.css} />
-                <SkillIcon name="Django" icon={skillIcons.django} />
-              </div>
-            </div>
-            
-            <div className="mb-12">
-              <h3 className="text-xl font-semibold mb-6">Database</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                <SkillIcon name="MongoDB" icon={skillIcons.mongodb} />
-                <SkillIcon name="MySQL" icon={skillIcons.mysql} />
-                <SkillIcon name="Flask" icon={skillIcons.flask} />
-                <SkillIcon name="GitHub" icon={skillIcons.github} />
-              </div>
-            </div>
-            
-            <div>
-              <h3 className="text-xl font-semibold mb-6">Tools</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                <SkillIcon name="VS Code" icon={skillIcons.vscode} />
-                <SkillIcon name="GitHub" icon={skillIcons.github} />
-                <SkillIcon name="Figma" icon={skillIcons.figma} />
-              </div>
-            </div>
+            <Card className="overflow-hidden border border-blue-200/20 bg-blue-50/10 dark:bg-blue-950/10 shadow-md">
+              <CardContent className="p-6">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                  <SkillIcon name="Python" icon={skillIcons.python} />
+                  <SkillIcon name="JavaScript" icon={skillIcons.javascript} />
+                  <SkillIcon name="React" icon={skillIcons.react} />
+                  <SkillIcon name="HTML" icon={skillIcons.html} />
+                  <SkillIcon name="CSS" icon={skillIcons.css} />
+                  <SkillIcon name="Django" icon={skillIcons.django} />
+                  <SkillIcon name="Flask" icon={skillIcons.flask} />
+                  <SkillIcon name="MongoDB" icon={skillIcons.mongodb} />
+                  <SkillIcon name="MySQL" icon={skillIcons.mysql} />
+                  <SkillIcon name="VS Code" icon={skillIcons.vscode} />
+                  <SkillIcon name="GitHub" icon={skillIcons.github} />
+                  <SkillIcon name="Figma" icon={skillIcons.figma} />
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
         
@@ -230,8 +217,8 @@ const Index = () => {
           </div>
         </section>
         
-        {/* Projects Section */}
-        <section id="projects" className="py-20 bg-muted/30">
+        {/* Projects Section - Add a soft dark background color */}
+        <section id="projects" className="py-20 bg-blue-950/20">
           <div className="container px-4 md:px-6">
             <SectionHeading 
               title="Projects" 
@@ -390,7 +377,7 @@ const Index = () => {
           </div>
         </section>
         
-        {/* Contact Section */}
+        {/* Contact Section - Updated to put the form in a card */}
         <section id="contact" className="py-20">
           <div className="container px-4 md:px-6">
             <SectionHeading 
@@ -449,7 +436,11 @@ const Index = () => {
               </div>
               
               <div>
-                <ContactForm />
+                <Card className="border border-blue-200/20 bg-card shadow-md overflow-hidden">
+                  <CardContent className="p-6">
+                    <ContactForm />
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>

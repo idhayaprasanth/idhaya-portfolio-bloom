@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { Send } from "lucide-react";
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -38,7 +39,7 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <div className="space-y-4">
         <div className="space-y-2">
           <Input
             id="name"
@@ -77,9 +78,10 @@ export function ContactForm() {
       <Button 
         type="submit" 
         disabled={isSubmitting}
-        className="w-full sm:w-auto bg-primary hover:bg-primary/80"
+        className="w-full bg-primary hover:bg-primary/80"
       >
-        {isSubmitting ? "Sending..." : "Send Message"}
+        {isSubmitting ? "Sending..." : "Send Message"} 
+        <Send className="ml-2 h-4 w-4" />
       </Button>
     </form>
   );

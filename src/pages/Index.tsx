@@ -33,26 +33,39 @@ const Index = () => {
     <ThemeProvider defaultTheme="dark">
       <div className="min-h-screen">
         <Navbar />
-        
+
         {/* Hero Section - Updated with brighter image display */}
-        <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <section
+          id="hero"
+          className="relative min-h-screen flex items-center justify-center overflow-hidden"
+        >
           <ParticlesBackground />
           <div className="container px-4 md:px-6 relative z-10 flex flex-col md:flex-row items-center">
             <div className="flex flex-col items-center text-center md:items-start md:text-left md:w-1/2">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter mb-6 animate-fade-in">
                 Idhaya Prasanth M
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl animate-fade-in" style={{ animationDelay: "200ms" }}>
-                Web Developer & Designer | Full Stack Enthusiast | Crafting Beautiful Digital Experiences
+              <p
+                className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl animate-fade-in"
+                style={{ animationDelay: "200ms" }}
+              >
+                Web Developer & Designer | Full Stack Enthusiast | Crafting
+                Beautiful Digital Experiences
               </p>
-              <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 animate-fade-in" style={{ animationDelay: "400ms" }}>
+              <div
+                className="flex flex-wrap items-center justify-center md:justify-start gap-4 animate-fade-in"
+                style={{ animationDelay: "400ms" }}
+              >
                 <a href="#contact">
                   <Button className="bg-blue-500 hover:bg-blue-600 text-white">
                     Get in Touch <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </a>
                 <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-100 hover:text-blue-700">
+                  <Button
+                    variant="outline"
+                    className="border-blue-500 text-blue-500 hover:bg-blue-100 hover:text-blue-700"
+                  >
                     Download Resume <FileText className="ml-2 h-4 w-4" />
                   </Button>
                 </a>
@@ -86,15 +99,21 @@ const Index = () => {
             </div>
             <div className="hidden md:flex md:w-1/2 justify-center mt-10 md:mt-0">
               <div className="relative w-64 h-64 lg:w-80 lg:h-80">
-                <img 
+                <img
                   src="https://img.freepik.com/premium-photo/3d-illustration-businessman-with-laptop-businessman-working-office-cartoon-character-3d_153074-1715.jpg"
-                  alt="Developer Avatar" 
-                  className="w-full h-full object-contain rounded-full bg-white/20 p-2 border-2 border-blue-500/50 animate-fade-in brightness-110 contrast-110" 
-                  style={{ animationDelay: "600ms" }} 
+                  alt="Developer Avatar"
+                  className="w-full h-full object-contain rounded-full  p-2 border-2 border-blue-500/50 animate-fade-in "
+                  style={{ animationDelay: "600ms" }}
                 />
                 <div className="absolute inset-0 rounded-full bg-blue-400/10 animate-pulse"></div>
-                <div className="absolute -inset-4 rounded-full bg-blue-300/5 animate-pulse" style={{ animationDelay: "300ms" }}></div>
-                <div className="absolute -inset-8 rounded-full bg-blue-200/5 animate-pulse" style={{ animationDelay: "600ms" }}></div>
+                <div
+                  className="absolute -inset-4 rounded-full bg-blue-300/5 animate-pulse"
+                  style={{ animationDelay: "300ms" }}
+                ></div>
+                <div
+                  className="absolute -inset-8 rounded-full bg-blue-200/5 animate-pulse"
+                  style={{ animationDelay: "600ms" }}
+                ></div>
               </div>
             </div>
           </div>
@@ -104,24 +123,34 @@ const Index = () => {
             </a>
           </div>
         </section>
-        
+
         {/* About Section */}
-        <section id="about" className="py-20">
+        <section id="about" className="py-20 bg-[#0f172b] text-white">
           <div className="container px-4 md:px-6">
-            <SectionHeading 
-              title="About Me" 
-              subtitle="Get to know me better" 
+            <SectionHeading
+              title="About Me"
+              subtitle="Get to know me better"
+              alignment="center"
             />
             <div className="grid md:grid-cols-2 gap-10">
               <div className="space-y-4">
                 <p>
-                  Hello! I'm Idhaya Prasanth M, a passionate web developer and designer with a strong foundation in both front-end and back-end technologies. Currently pursuing my Bachelor's degree in Computer Science, I'm dedicated to crafting efficient, user-friendly digital experiences.
+                  Hello! I'm Idhaya Prasanth M, a passionate web developer and
+                  designer with a strong foundation in both front-end and
+                  back-end technologies. Currently pursuing my Bachelor's degree
+                  in Computer Science, I'm dedicated to crafting efficient,
+                  user-friendly digital experiences.
                 </p>
                 <p>
-                  With experience as a Video Annotator and Quality Analyst at iBrow Technologies, I've developed a keen eye for detail and quality. My focus areas include responsive web design, user experience optimization, and building robust web applications.
+                  With experience as a Video Annotator and Quality Analyst at
+                  iBrow Technologies, I've developed a keen eye for detail and
+                  quality. My focus areas include responsive web design, user
+                  experience optimization, and building robust web applications.
                 </p>
                 <p>
-                  I believe in continuous learning and constantly push myself to stay updated with the latest technologies and best practices in the field of web development.
+                  I believe in continuous learning and constantly push myself to
+                  stay updated with the latest technologies and best practices
+                  in the field of web development.
                 </p>
               </div>
               <div className="flex flex-col space-y-4">
@@ -152,16 +181,16 @@ const Index = () => {
             </div>
           </div>
         </section>
-        
+
         {/* Skills Section - Updated to use a single card with soft color */}
         <section id="skills" className="py-20 bg-muted/30">
           <div className="container px-4 md:px-6">
-            <SectionHeading 
-              title="Skills" 
-              subtitle="Technologies I work with" 
+            <SectionHeading
+              title="Skills"
+              subtitle="Technologies I work with"
               alignment="center"
             />
-            
+
             <Card className="overflow-hidden border border-blue-200/20 bg-blue-50/10 dark:bg-blue-950/10 shadow-md">
               <CardContent className="p-6">
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
@@ -182,15 +211,16 @@ const Index = () => {
             </Card>
           </div>
         </section>
-        
+
         {/* Experience Section */}
         <section id="experience" className="py-20">
           <div className="container px-4 md:px-6">
-            <SectionHeading 
-              title="Experience" 
-              subtitle="My professional journey" 
+            <SectionHeading
+              title="Experience"
+              subtitle="My professional journey"
+              alignment="center"
             />
-            
+
             <div className="relative pl-5 md:pl-10 border-l border-muted">
               {/* Video Annotator Role */}
               <div className="mb-12 relative">
@@ -200,18 +230,33 @@ const Index = () => {
                 <div className="bg-card rounded-lg p-6 border border-border card-hover">
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
                     <h3 className="text-xl font-semibold">Video Annotator</h3>
-                    <div className="text-sm text-muted-foreground">iBrow Technologies | Dec 2024 - Jan 2025 | Remote</div>
+                    <div className="text-sm text-muted-foreground">
+                      iBrow Technologies | Dec 2024 - Jan 2025 | Remote
+                    </div>
                   </div>
                   <ul className="space-y-2 list-disc pl-5">
-                    <li>Annotated and labeled video data for AI model training.</li>
-                    <li>Ensured accuracy and consistency in dataset preparation.</li>
-                    <li>Collaborated with the AI team to improve model performance.</li>
-                    <li>Learned data annotation techniques and quality assurance for AI datasets.</li>
-                    <li>Contributed by maintaining high data accuracy and efficiency during labeling.</li>
+                    <li>
+                      Annotated and labeled video data for AI model training.
+                    </li>
+                    <li>
+                      Ensured accuracy and consistency in dataset preparation.
+                    </li>
+                    <li>
+                      Collaborated with the AI team to improve model
+                      performance.
+                    </li>
+                    <li>
+                      Learned data annotation techniques and quality assurance
+                      for AI datasets.
+                    </li>
+                    <li>
+                      Contributed by maintaining high data accuracy and
+                      efficiency during labeling.
+                    </li>
                   </ul>
                 </div>
               </div>
-              
+
               {/* Quality Analyst Role */}
               <div className="mb-12 relative">
                 <div className="absolute -left-[22px] md:-left-[42px] top-0 w-10 h-10 rounded-full bg-muted flex items-center justify-center">
@@ -220,50 +265,64 @@ const Index = () => {
                 <div className="bg-card rounded-lg p-6 border border-border card-hover">
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
                     <h3 className="text-xl font-semibold">Quality Analyst</h3>
-                    <div className="text-sm text-muted-foreground">iBrow Technologies, Chennai | 2023 - Present</div>
+                    <div className="text-sm text-muted-foreground">
+                      iBrow Technologies, Chennai | 2023 - Present
+                    </div>
                   </div>
                   <ul className="space-y-2 list-disc pl-5">
-                    <li>Performed quality checks to ensure annotation accuracy and consistency.</li>
-                    <li>Collaborated with team members to maintain high-quality standards for AI model training.</li>
-                    <li>Identified patterns and suggested improvements in the annotation workflow.</li>
-                    <li>Completed projects within deadline while maintaining attention to detail.</li>
+                    <li>
+                      Performed quality checks to ensure annotation accuracy and
+                      consistency.
+                    </li>
+                    <li>
+                      Collaborated with team members to maintain high-quality
+                      standards for AI model training.
+                    </li>
+                    <li>
+                      Identified patterns and suggested improvements in the
+                      annotation workflow.
+                    </li>
+                    <li>
+                      Completed projects within deadline while maintaining
+                      attention to detail.
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        
+
         {/* Projects Section - Add a soft dark background color */}
-        <section id="projects" className="py-20 bg-blue-950/20">
+        <section id="projects" className="py-20 ">
           <div className="container px-4 md:px-6">
-            <SectionHeading 
-              title="Projects" 
-              subtitle="Showcasing my technical skills" 
+            <SectionHeading
+              title="Projects"
+              subtitle="Showcasing my technical skills"
               alignment="center"
             />
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <ProjectCard 
+              <ProjectCard
                 title="Attendance Management System"
-                description="A comprehensive system for tracking and managing attendance"
+                description="A comprehensive system for  managing attendance"
                 technologies={[
                   { name: "Django", color: "#092e20" },
                   { name: "HTML", color: "#e34c26" },
                   { name: "CSS", color: "#264de4" },
-                  { name: "JavaScript", color: "#f0db4f" }
+                  { name: "JavaScript", color: "#f0db4f" },
                 ]}
                 githubLink="https://github.com/idhayaprasanth/attendance-management"
                 features={[
                   "Role-based user authentication",
                   "Automatic attendance percentage calculation",
                   "Responsive UI with clean design",
-                  "User-friendly dashboard interface"
+                  "User-friendly dashboard interface",
                 ]}
-                learnings="Implementing secure role-based authentication and optimizing database queries for real-time attendance calculations."
+                learnings="Implementing secure role-based authentication and optimizing database queries for real-time attendance."
               />
-              
-              <ProjectCard 
+
+              <ProjectCard
                 title="Bus Ticket Booking System"
                 description="Online platform for booking bus tickets with secure payment"
                 technologies={[
@@ -271,19 +330,19 @@ const Index = () => {
                   { name: "HTML", color: "#e34c26" },
                   { name: "CSS", color: "#264de4" },
                   { name: "JavaScript", color: "#f0db4f" },
-                  { name: "Razorpay", color: "#0377FF" }
+                  { name: "Razorpay", color: "#0377FF" },
                 ]}
                 githubLink="https://github.com/idhayaprasanth/bus-ticket-system"
                 features={[
                   "Secure online booking with Razorpay integration",
                   "QR code scanning for ticket validation",
                   "Responsive and user-friendly interface",
-                  "Real-time seat availability"
+                  "Real-time seat availability",
                 ]}
                 learnings="Integrating payment gateways securely and implementing QR code generation/validation for ticket verification."
               />
-              
-              <ProjectCard 
+
+              <ProjectCard
                 title="Library Management System"
                 description="Comprehensive system for managing library resources"
                 technologies={[
@@ -291,123 +350,154 @@ const Index = () => {
                   { name: "HTML", color: "#e34c26" },
                   { name: "CSS", color: "#264de4" },
                   { name: "JavaScript", color: "#f0db4f" },
-                  { name: "MySQL", color: "#00758F" }
+                  { name: "MySQL", color: "#00758F" },
                 ]}
                 githubLink="https://github.com/idhayaprasanth/library-management"
                 features={[
                   "Book, member, and transaction management",
                   "Fine calculation and email notifications",
                   "Role-based access (Admin/User)",
-                  "Comprehensive reporting"
+                  "Comprehensive reporting",
                 ]}
                 learnings="Managing large datasets efficiently, implementing role-based permissions, and sending automated email notifications."
               />
             </div>
           </div>
         </section>
-        
+
         {/* Education Section */}
         <section id="education" className="py-20">
           <div className="container px-4 md:px-6">
-            <SectionHeading 
-              title="Education" 
-              subtitle="My academic background" 
+            <SectionHeading
+              title="Education"
+              subtitle="My academic background"
+              alignment="center"
             />
-            
+
             <div className="relative pl-5 md:pl-10 border-l border-muted">
               <div className="mb-12 relative">
                 <div className="absolute -left-[22px] md:-left-[42px] top-0 w-10 h-10 rounded-full bg-muted flex items-center justify-center">
                   <Calendar className="h-5 w-5 text-primary" />
                 </div>
                 <div className="bg-card rounded-lg p-6 border border-border card-hover">
-                  <h3 className="text-xl font-semibold mb-1">Bachelor of Computer Science</h3>
-                  <p className="text-muted-foreground mb-2">GTN Arts College | 2022 - 2025</p>
+                  <h3 className="text-xl font-semibold mb-1">
+                    Bachelor of Computer Science
+                  </h3>
+                  <p className="text-muted-foreground mb-2">
+                    GTN Arts College | 2022 - 2025
+                  </p>
                   <p className="text-sm font-medium">Percentage: 81%</p>
                 </div>
               </div>
-              
+
               <div className="mb-12 relative">
                 <div className="absolute -left-[22px] md:-left-[42px] top-0 w-10 h-10 rounded-full bg-muted flex items-center justify-center">
                   <Calendar className="h-5 w-5 text-primary" />
                 </div>
                 <div className="bg-card rounded-lg p-6 border border-border card-hover">
-                  <h3 className="text-xl font-semibold mb-1">HSC (Higher Secondary Certificate)</h3>
-                  <p className="text-muted-foreground mb-2">Nagalakshmi Matric HR Sec School | 2020 - 2022</p>
+                  <h3 className="text-xl font-semibold mb-1">
+                    HSC (Higher Secondary Certificate)
+                  </h3>
+                  <p className="text-muted-foreground mb-2">
+                    Nagalakshmi Matric HR Sec School | 2020 - 2022
+                  </p>
                   <p className="text-sm font-medium">Percentage: 73%</p>
                 </div>
               </div>
-              
+
               <div className="relative">
                 <div className="absolute -left-[22px] md:-left-[42px] top-0 w-10 h-10 rounded-full bg-muted flex items-center justify-center">
                   <Calendar className="h-5 w-5 text-primary" />
                 </div>
                 <div className="bg-card rounded-lg p-6 border border-border card-hover">
-                  <h3 className="text-xl font-semibold mb-1">SSLC (Secondary School Leaving Certificate)</h3>
-                  <p className="text-muted-foreground mb-2">Nagalakshmi Matric HR Sec School | 2020</p>
+                  <h3 className="text-xl font-semibold mb-1">
+                    SSLC (Secondary School Leaving Certificate)
+                  </h3>
+                  <p className="text-muted-foreground mb-2">
+                    Nagalakshmi Matric HR Sec School | 2020
+                  </p>
                   <p className="text-sm font-medium">Percentage: 76%</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        
+
         {/* Achievements Section */}
         <section id="achievements" className="py-20 bg-muted/30">
           <div className="container px-4 md:px-6">
-            <SectionHeading 
-              title="Achievements" 
-              subtitle="Recognitions and accomplishments" 
+            <SectionHeading
+              title="Achievements"
+              subtitle="Recognitions and accomplishments"
               alignment="center"
             />
-            
+
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <Card className="card-hover">
                 <CardContent className="p-6 flex flex-col items-center text-center">
                   <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-4">
                     <span className="text-2xl font-bold text-primary">1</span>
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Freelance Project</h3>
-                  <p className="text-muted-foreground">Successfully developed a comprehensive project for college students as a freelance effort.</p>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Freelance Project
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Successfully developed a comprehensive project for college
+                    students as a freelance effort.
+                  </p>
                 </CardContent>
               </Card>
-              
+
               <Card className="card-hover">
                 <CardContent className="p-6 flex flex-col items-center text-center">
                   <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-4">
                     <span className="text-2xl font-bold text-primary">2</span>
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">IoT Project Award</h3>
-                  <p className="text-muted-foreground">Secured second place in the IoT project competition at a collegiate symposium.</p>
+                  <h3 className="text-xl font-semibold mb-2">
+                    IoT Project Award
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Secured second place in the IoT project competition at a
+                    collegiate symposium.
+                  </p>
                 </CardContent>
               </Card>
-              
+
               <Card className="card-hover">
                 <CardContent className="p-6 flex flex-col items-center text-center">
                   <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-4">
                     <span className="text-2xl font-bold text-primary">3</span>
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Web Development Prize</h3>
-                  <p className="text-muted-foreground">Won second prize in multiple web development competitions showcasing design and development skills.</p>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Web Development Prize
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Won second prize in multiple web development competitions
+                    showcasing design and development skills.
+                  </p>
                 </CardContent>
               </Card>
             </div>
           </div>
         </section>
-        
+
         {/* Contact Section - Updated to put the form in a card */}
         <section id="contact" className="py-20">
           <div className="container px-4 md:px-6">
-            <SectionHeading 
-              title="Get In Touch" 
-              subtitle="Let's work together" 
+            <SectionHeading
+              title="Get In Touch"
+              subtitle="Let's work together"
+              alignment="center"
             />
-            
+
             <div className="grid md:grid-cols-2 gap-10">
               <div>
                 <p className="mb-6">
-                  I'm currently looking for new opportunities and would love to hear from you. Whether you have a question, a project idea, or just want to say hi, feel free to reach out!
+                  I'm currently looking for new opportunities and would love to
+                  hear from you. Whether you have a question, a project idea, or
+                  just want to say hi, feel free to reach out!
                 </p>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
@@ -415,33 +505,39 @@ const Index = () => {
                     </div>
                     <div>
                       <div className="text-sm font-medium">Email</div>
-                      <a href="mailto:idhayaprasanth56@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                      <a
+                        href="mailto:idhayaprasanth56@gmail.com"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
                         idhayaprasanth56@gmail.com
                       </a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-3">
                     <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
                       <Phone className="h-5 w-5 text-primary" />
                     </div>
                     <div>
                       <div className="text-sm font-medium">Phone</div>
-                      <a href="tel:+919944255013" className="text-muted-foreground hover:text-primary transition-colors">
+                      <a
+                        href="tel:+919944255013"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
                         +91 9944255013
                       </a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-3">
                     <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
                       <Linkedin className="h-5 w-5 text-primary" />
                     </div>
                     <div>
                       <div className="text-sm font-medium">LinkedIn</div>
-                      <a 
-                        href="https://linkedin.com/in/idhayaprasanth" 
-                        target="_blank" 
+                      <a
+                        href="https://linkedin.com/in/idhayaprasanth"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
@@ -451,7 +547,7 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div>
                 <Card className="border border-blue-200/20 bg-card shadow-md overflow-hidden">
                   <CardContent className="p-6">
@@ -462,7 +558,7 @@ const Index = () => {
             </div>
           </div>
         </section>
-        
+
         <Footer />
       </div>
     </ThemeProvider>

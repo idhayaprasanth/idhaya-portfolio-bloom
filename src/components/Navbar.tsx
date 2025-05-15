@@ -28,13 +28,8 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/80 backdrop-blur-md shadow-md"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="container flex items-center justify-between h-16 px-4 md:px-6">
+    className={`fixed top-0 w-full z-50 transition-all duration-300 bg-background/80 backdrop-blur-md shadow-md border-b border-border`}
+ >   < div className="container flex items-center justify-between h-16 px-4 md:px-6">
         <div className="flex items-center gap-2">
           <a 
             href="#hero" 

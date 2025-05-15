@@ -3,12 +3,13 @@ import { Github, Linkedin, Mail, Phone } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-background border-t py-8">
+    <footer className="bg-[#0f172b] text-white border-t py-8">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Idhaya Prasanth M. All rights reserved.
+              © {new Date().getFullYear()} Idhaya Prasanth M. All rights
+              reserved.
             </p>
           </div>
           <div className="flex items-center space-x-4">

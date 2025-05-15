@@ -14,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 171 68% 63%;
+    --primary: 210 100% 50%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -23,7 +23,7 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 171 68% 63%;
+    --accent: 210 100% 50%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -46,7 +46,7 @@
     --popover: 222 47% 11%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 171 68% 63%;
+    --primary: 210 100% 50%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -55,7 +55,7 @@
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 171 68% 63%;
+    --accent: 210 100% 50%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 62.8% 30.6%;
@@ -86,23 +86,23 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    @apply bg-primary rounded-full;
+    @apply bg-blue-500 rounded-full;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-accent;
+    @apply bg-blue-600;
   }
   
   .skill-icon {
-    @apply transition-all duration-300 transform hover:scale-110 hover:text-primary;
+    @apply transition-all duration-300 transform hover:scale-110 hover:text-blue-500;
   }
   
   .nav-link {
-    @apply relative hover:text-primary transition-colors duration-200 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-0.5 before:bg-primary before:scale-x-0 before:origin-right before:transition-transform before:duration-300 hover:before:scale-x-100 hover:before:origin-left;
+    @apply relative hover:text-blue-500 transition-colors duration-200 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-0.5 before:bg-blue-500 before:scale-x-0 before:origin-right before:transition-transform before:duration-300 hover:before:scale-x-100 hover:before:origin-left;
   }
   
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:border-primary/50;
+    @apply transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 hover:border-blue-500/50;
   }
 }
 

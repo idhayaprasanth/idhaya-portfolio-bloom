@@ -8,7 +8,7 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { Github, Linkedin, ExternalLink, ArrowRight, Calendar, Mail, Phone } from "lucide-react";
+import { Github, Linkedin, ExternalLink, ArrowRight, Calendar, Mail, Phone, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // Skill icons
@@ -45,8 +45,13 @@ const Index = () => {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "400ms" }}>
               <a href="#contact">
-                <Button className="bg-primary hover:bg-primary/80 text-primary-foreground">
+                <Button className="bg-blue-500 hover:bg-blue-600 text-white">
                   Get in Touch <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </a>
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-100 hover:text-blue-700">
+                  Download Resume <FileText className="ml-2 h-4 w-4" />
                 </Button>
               </a>
               <div className="flex items-center gap-3">
@@ -54,7 +59,7 @@ const Index = () => {
                   href="https://github.com/idhayaprasanth"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center w-10 h-10 rounded-full bg-muted hover:bg-primary/20 transition-colors"
+                  className="flex items-center justify-center w-10 h-10 rounded-full bg-muted hover:bg-blue-500/20 transition-colors"
                 >
                   <Github className="h-5 w-5" />
                 </a>
@@ -62,7 +67,7 @@ const Index = () => {
                   href="https://linkedin.com/in/idhayaprasanth"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center w-10 h-10 rounded-full bg-muted hover:bg-primary/20 transition-colors"
+                  className="flex items-center justify-center w-10 h-10 rounded-full bg-muted hover:bg-blue-500/20 transition-colors"
                 >
                   <Linkedin className="h-5 w-5" />
                 </a>
@@ -70,7 +75,7 @@ const Index = () => {
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center w-10 h-10 rounded-full bg-muted hover:bg-primary/20 transition-colors"
+                  className="flex items-center justify-center w-10 h-10 rounded-full bg-muted hover:bg-blue-500/20 transition-colors"
                 >
                   <ExternalLink className="h-5 w-5" />
                 </a>
@@ -183,17 +188,37 @@ const Index = () => {
             />
             
             <div className="relative pl-5 md:pl-10 border-l border-muted">
+              {/* Video Annotator Role */}
               <div className="mb-12 relative">
                 <div className="absolute -left-[22px] md:-left-[42px] top-0 w-10 h-10 rounded-full bg-muted flex items-center justify-center">
-                  <Calendar className="h-5 w-5 text-primary" />
+                  <Calendar className="h-5 w-5 text-blue-500" />
                 </div>
                 <div className="bg-card rounded-lg p-6 border border-border card-hover">
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
-                    <h3 className="text-xl font-semibold">Video Annotator & Quality Analyst</h3>
+                    <h3 className="text-xl font-semibold">Video Annotator</h3>
+                    <div className="text-sm text-muted-foreground">iBrow Technologies | Dec 2024 - Jan 2025 | Remote</div>
+                  </div>
+                  <ul className="space-y-2 list-disc pl-5">
+                    <li>Annotated and labeled video data for AI model training.</li>
+                    <li>Ensured accuracy and consistency in dataset preparation.</li>
+                    <li>Collaborated with the AI team to improve model performance.</li>
+                    <li>Learned data annotation techniques and quality assurance for AI datasets.</li>
+                    <li>Contributed by maintaining high data accuracy and efficiency during labeling.</li>
+                  </ul>
+                </div>
+              </div>
+              
+              {/* Quality Analyst Role */}
+              <div className="mb-12 relative">
+                <div className="absolute -left-[22px] md:-left-[42px] top-0 w-10 h-10 rounded-full bg-muted flex items-center justify-center">
+                  <Calendar className="h-5 w-5 text-blue-500" />
+                </div>
+                <div className="bg-card rounded-lg p-6 border border-border card-hover">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+                    <h3 className="text-xl font-semibold">Quality Analyst</h3>
                     <div className="text-sm text-muted-foreground">iBrow Technologies, Chennai | 2023 - Present</div>
                   </div>
                   <ul className="space-y-2 list-disc pl-5">
-                    <li>Annotated and labeled video content for AI training datasets using specialized tools.</li>
                     <li>Performed quality checks to ensure annotation accuracy and consistency.</li>
                     <li>Collaborated with team members to maintain high-quality standards for AI model training.</li>
                     <li>Identified patterns and suggested improvements in the annotation workflow.</li>

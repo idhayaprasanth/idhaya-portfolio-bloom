@@ -33,7 +33,7 @@ const Index = () => {
       <div className="min-h-screen">
         <Navbar />
         
-        {/* Hero Section - Updated with image */}
+        {/* Hero Section - Updated with brighter image display */}
         <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
           <ParticlesBackground />
           <div className="container px-4 md:px-6 relative z-10 flex flex-col md:flex-row items-center">
@@ -88,10 +88,12 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/9bd14fd9-2fcf-413a-ae07-2ceb3ca69bcd.png" 
                   alt="Developer Avatar" 
-                  className="w-full h-full object-contain rounded-full bg-blue-500/10 p-2 border-2 border-blue-500/30 animate-fade-in" 
+                  className="w-full h-full object-contain rounded-full bg-white/20 p-2 border-2 border-blue-500/50 animate-fade-in brightness-110 contrast-110" 
                   style={{ animationDelay: "600ms" }} 
                 />
-                <div className="absolute inset-0 rounded-full bg-blue-500/5 animate-pulse"></div>
+                <div className="absolute inset-0 rounded-full bg-blue-400/10 animate-pulse"></div>
+                <div className="absolute -inset-4 rounded-full bg-blue-300/5 animate-pulse" style={{ animationDelay: "300ms" }}></div>
+                <div className="absolute -inset-8 rounded-full bg-blue-200/5 animate-pulse" style={{ animationDelay: "600ms" }}></div>
               </div>
             </div>
           </div>

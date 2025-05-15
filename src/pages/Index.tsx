@@ -1,3 +1,4 @@
+
 import { Navbar } from "@/components/Navbar";
 import { ParticlesBackground } from "@/components/ParticlesBackground";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -32,52 +33,65 @@ const Index = () => {
       <div className="min-h-screen">
         <Navbar />
         
-        {/* Hero Section */}
+        {/* Hero Section - Updated with image */}
         <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
           <ParticlesBackground />
-          <div className="container px-4 md:px-6 relative z-10 flex flex-col items-center text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter mb-6 animate-fade-in">
-              Idhaya Prasanth M
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl animate-fade-in" style={{ animationDelay: "200ms" }}>
-              Web Developer & Designer | Full Stack Enthusiast | Crafting Beautiful Digital Experiences
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "400ms" }}>
-              <a href="#contact">
-                <Button className="bg-blue-500 hover:bg-blue-600 text-white">
-                  Get in Touch <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </a>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-100 hover:text-blue-700">
-                  Download Resume <FileText className="ml-2 h-4 w-4" />
-                </Button>
-              </a>
-              <div className="flex items-center gap-3">
-                <a
-                  href="https://github.com/idhayaprasanth"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center w-10 h-10 rounded-full bg-muted hover:bg-blue-500/20 transition-colors"
-                >
-                  <Github className="h-5 w-5" />
+          <div className="container px-4 md:px-6 relative z-10 flex flex-col md:flex-row items-center">
+            <div className="flex flex-col items-center text-center md:items-start md:text-left md:w-1/2">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter mb-6 animate-fade-in">
+                Idhaya Prasanth M
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl animate-fade-in" style={{ animationDelay: "200ms" }}>
+                Web Developer & Designer | Full Stack Enthusiast | Crafting Beautiful Digital Experiences
+              </p>
+              <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 animate-fade-in" style={{ animationDelay: "400ms" }}>
+                <a href="#contact">
+                  <Button className="bg-blue-500 hover:bg-blue-600 text-white">
+                    Get in Touch <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
                 </a>
-                <a
-                  href="https://linkedin.com/in/idhayaprasanth"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center w-10 h-10 rounded-full bg-muted hover:bg-blue-500/20 transition-colors"
-                >
-                  <Linkedin className="h-5 w-5" />
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-100 hover:text-blue-700">
+                    Download Resume <FileText className="ml-2 h-4 w-4" />
+                  </Button>
                 </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center w-10 h-10 rounded-full bg-muted hover:bg-blue-500/20 transition-colors"
-                >
-                  <ExternalLink className="h-5 w-5" />
-                </a>
+                <div className="flex items-center gap-3">
+                  <a
+                    href="https://github.com/idhayaprasanth"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-10 h-10 rounded-full bg-muted hover:bg-blue-500/20 transition-colors"
+                  >
+                    <Github className="h-5 w-5" />
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/idhayaprasanth"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-10 h-10 rounded-full bg-muted hover:bg-blue-500/20 transition-colors"
+                  >
+                    <Linkedin className="h-5 w-5" />
+                  </a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-10 h-10 rounded-full bg-muted hover:bg-blue-500/20 transition-colors"
+                  >
+                    <ExternalLink className="h-5 w-5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="hidden md:flex md:w-1/2 justify-center mt-10 md:mt-0">
+              <div className="relative w-64 h-64 lg:w-80 lg:h-80">
+                <img 
+                  src="/lovable-uploads/9bd14fd9-2fcf-413a-ae07-2ceb3ca69bcd.png" 
+                  alt="Developer Avatar" 
+                  className="w-full h-full object-contain rounded-full bg-blue-500/10 p-2 border-2 border-blue-500/30 animate-fade-in" 
+                  style={{ animationDelay: "600ms" }} 
+                />
+                <div className="absolute inset-0 rounded-full bg-blue-500/5 animate-pulse"></div>
               </div>
             </div>
           </div>

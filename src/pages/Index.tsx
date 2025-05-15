@@ -8,7 +8,7 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { Github, Linkedin, ExternalLink, ArrowRight, Calendar } from "lucide-react";
+import { Github, Linkedin, ExternalLink, ArrowRight, Calendar, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // Skill icons

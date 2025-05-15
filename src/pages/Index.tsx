@@ -10,7 +10,7 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Github, Linkedin, ExternalLink, ArrowRight, Calendar, Mail, Phone, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {image} from "../assets/images/May 15, 2025, 09_29_53 PM"
+
 
 // Skill icons
 const skillIcons = {
@@ -87,7 +87,7 @@ const Index = () => {
             <div className="hidden md:flex md:w-1/2 justify-center mt-10 md:mt-0">
               <div className="relative w-64 h-64 lg:w-80 lg:h-80">
                 <img 
-                  src={image}
+                  src="https://img.freepik.com/premium-photo/3d-illustration-businessman-with-laptop-businessman-working-office-cartoon-character-3d_153074-1715.jpg"
                   alt="Developer Avatar" 
                   className="w-full h-full object-contain rounded-full bg-white/20 p-2 border-2 border-blue-500/50 animate-fade-in brightness-110 contrast-110" 
                   style={{ animationDelay: "600ms" }} 

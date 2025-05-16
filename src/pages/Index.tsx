@@ -103,7 +103,6 @@ const Index = () => {
                   src="https://img.freepik.com/premium-photo/3d-illustration-businessman-with-laptop-businessman-working-office-cartoon-character-3d_153074-1715.jpg"
                   alt="Developer Avatar"
                   className="w-full h-full object-contain rounded-full  p-2 border-2 border-blue-500/50 animate-fade-in "
-                  style={{ animationDelay: "600ms" }}
                 />
                 <div className="absolute inset-0 rounded-full bg-blue-400/10 animate-pulse"></div>
                 <div

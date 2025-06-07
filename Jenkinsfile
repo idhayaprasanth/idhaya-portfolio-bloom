@@ -11,19 +11,22 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo 'Build step: nothing to build for static portfolio, so just echo.'
+                echo 'Running npm install and npm run build...'
+                bat 'npm install'
+                bat 'npm run build'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Test step: no tests now, so just echo.'
+                echo 'Test step: Add your test command here.'
+                // Example: bat 'npm test'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploy step: placeholder, you can add deploy commands later.'
+                echo 'Deploy step: Add deploy command or script here.'
             }
         }
     }
